@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,AAAC,CACb,SAAS,CAAE,IAAI,CACf,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CACZ,aAAa,CAAE,IAAI,CACnB,MAAM,CAAE,OAAO,CAMhB,AAXD,AAOE,cAPY,AAOX,OAAO,AAAC,CACP,gBAAgB,CCVR,OAAO,CDWf,KAAK,CAAE,KAAK,CACb",
+    "sources": [
+        "../../src/components/portfolioList/portfolioList.scss",
+        "../../src/global.scss"
+    ],
+    "names": [],
+    "file": "portfolioList.min.css"
+}

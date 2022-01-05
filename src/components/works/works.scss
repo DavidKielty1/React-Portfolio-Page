@@ -1,14 +1,21 @@
+@import "../../global.scss";
+
 .works {
   background-color: crimson;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 100vh;
 
   .arrow {
     height: 50px;
     position: absolute;
     cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
 
     &.left {
       left: 100px;
@@ -27,6 +34,12 @@
     left: 0;
     transition: all 1s ease;
 
+    @include mobile {
+      height: 87vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -42,6 +55,12 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+          width: 300px;
+          height: 160px;
+          margin: 10px 0;
+        }
+
         .left {
           flex: 2;
           height: 80%;
@@ -49,12 +68,24 @@
           align-items: center;
           justify-content: center;
 
+          @include mobile {
+            height: 90%;
+            flex: 2.5;
+          }
+
           .leftContainer {
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+
+            @include mobile {
+              height: 95%;
+              width: 80%;
+              justify-content: space-around;
+            }
 
             .imgContainer {
               width: 70px;
@@ -65,17 +96,35 @@
               align-items: center;
               justify-content: center;
 
+              @include mobile {
+                width: 40px;
+                height: 40px;
+                align-items: center;
+              }
+
               img {
                 width: 37px;
+
+                @include mobile {
+                  width: 20px;
+                  align-items: center;
+                }
               }
             }
-
             h2 {
               font-size: 24px;
+
+              @include mobile {
+                font-size: 15px;
+              }
             }
 
             p {
               font-size: 15px;
+
+              @include mobile {
+                font-size: 10px;
+              }
             }
 
             span {
@@ -83,9 +132,14 @@
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
+
+              @include mobile {
+                display: none;
+              }
             }
           }
         }
+
         .right {
           flex: 4;
           height: 80%;
@@ -100,6 +154,11 @@
             position: relative;
             top: 125px;
             right: -55px;
+
+            @include mobile {
+              top: 60px;
+              right: -25px;
+            }
           }
         }
       }

@@ -11,4 +11,9 @@
     background-color: $mainColor;
     color: white;
   }
+
+  @include mobile {
+    margin: 5px;
+    padding: 2px;
+  }
 }

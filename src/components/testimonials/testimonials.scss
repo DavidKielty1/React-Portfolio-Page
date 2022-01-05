@@ -5,9 +5,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   h1 {
     font-size: 50px;
+    overflow: hidden;
+
+    @include mobile {
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+    }
   }
 
   .container {
@@ -15,7 +23,16 @@
     height: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    overflow: hidden;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+      overflow: hidden;
+      height: 100%;
+      overflow: hidden;
+    }
 
     .card {
       width: 300px;
@@ -27,41 +44,71 @@
       justify-content: space-around;
       padding: 20px;
       transition: all ease 0.5s;
+      overflow: hidden;
+
+      @include mobile {
+        width: 80vw;
+        height: 25%;
+        overflow: hidden;
+        margin: 10px 0;
+        overflow: hidden;
+      }
 
       &.featured {
         width: 300px;
         height: 75%;
         margin: 0 30px;
+        overflow: hidden;
+
+        @include mobile {
+          width: 80vw;
+          height: 35%;
+          margin: 5px;
+          overflow: hidden;
+        }
       }
 
       &:hover {
         transform: scale(1.1);
+        overflow: hidden;
       }
 
       .top {
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         img {
           &.left,
           &.right {
             height: 25px;
           }
+
           &.user {
-            height: 60px;
-            width: 60px;
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 30px;
+
+            @include mobile {
+              height: 40px;
+              width: 40px;
+              margin: 0 20px;
+            }
           }
         }
       }
 
       .centre {
         padding: 10px;
-        background-color: rgb(240, 240, 240);
-        border-radius: 10px;
+        overflow: hidden;
+
+        @include mobile {
+          font-size: 12px;
+          padding: 5px;
+        }
       }
 
       .bottom {
@@ -72,10 +119,19 @@
 
         h3 {
           margin-bottom: 5px;
+          overflow: hidden;
+
+          @include mobile {
+            font-size: 14px;
+          }
         }
 
         h4 {
-          color: grey;
+          color: rgb(128, 128, 128);
+
+          @include mobile {
+            font-size: 13px;
+          }
         }
       }
     }

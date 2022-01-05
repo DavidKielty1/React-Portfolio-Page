@@ -1,2 +1,2 @@
-.portfolioList{font-size:14px;margin:50px;padding:7px;border-radius:10px;cursor:pointer}.portfolioList.active{background-color:#15023a;color:white}
+.portfolioList{font-size:14px;margin:50px;padding:7px;border-radius:10px;cursor:pointer}.portfolioList.active{background-color:#15023a;color:white}@media (max-width: 768px){.portfolioList{margin:5px;padding:2px}}
 /*# sourceMappingURL=portfolioList.min.css.map */

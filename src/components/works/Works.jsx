@@ -7,10 +7,10 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "../../assets/mobile.png",
-      title: "Web Design",
-      desc: "1Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      icon: "../../assets/newyear.png",
+      title: "Authentic Chinese Food Finder",
+      desc: "MERN stack application with CRUD functionality. Users are able to submit local Chinese restaurants with information regarding location, price, as well as give reviews and ratings for the various restaurants.",
+      img: "../../assets/chinese.png",
     },
     {
       id: "2",
@@ -49,9 +49,16 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <a
+                    href="https://limitless-refuge-85260.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <input type="button" class="button" value="Open Website" />
+                  </a>
                 </div>
               </div>
+
               <div className="right">
                 <img src={d.img} alt="" />
               </div>

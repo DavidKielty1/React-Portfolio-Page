@@ -17,6 +17,7 @@ export default function Portfolio() {
     {
       id: "featured",
       title: "Featured",
+      url: "https://portfoliokielty.herokuapp.com/",
     },
     {
       id: "web",

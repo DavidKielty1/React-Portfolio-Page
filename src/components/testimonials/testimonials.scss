@@ -1,15 +1,19 @@
 @import "../../global.scss";
 
 .testimonials {
-  background-color: white;
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
 
   h1 {
     font-size: 50px;
     overflow: hidden;
+    background-color: $whiteOpa;
+    padding: 1px 15px;
+    border-radius: 5px;
 
     @include mobile {
       justify-content: space-around;
@@ -23,6 +27,7 @@
     height: 80%;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 
     @include mobile {
@@ -45,6 +50,7 @@
       padding: 20px;
       transition: all ease 0.5s;
       overflow: hidden;
+      background-color: $whiteOpa;
 
       @include mobile {
         width: 80vw;
@@ -82,12 +88,12 @@
         img {
           &.left,
           &.right {
-            height: 25px;
+            height: 50px;
           }
 
           &.user {
-            height: 30px;
-            width: 30px;
+            height: 60px;
+            width: 60px;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 30px;

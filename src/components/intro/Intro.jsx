@@ -21,6 +21,7 @@ export default function Intro() {
           <img src="assets/man.png" alt="man" />
         </div>
       </div>
+
       <div className="right">
         <div className="wrapper">
           <h2>Hi there, I am</h2>
